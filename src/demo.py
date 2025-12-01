@@ -10,7 +10,7 @@
 import time
 import numpy as np
 
-from src.dataset import load_data
+from src.dataset import load_data   # UPDATED: new real dataset loader
 from src.encrypt import make_context
 from src.model import SimpleEncryptedLogReg
 
@@ -22,6 +22,7 @@ def acc(y, yp):
 def main():
     print("=== Encryption + Precision Medicine Demo (Scenario 1) ===")
 
+    # Load REAL WDBC dataset
     X_train, X_test, y_train, y_test = load_data()
     print("Train:", X_train.shape[0], "Test:", X_test.shape[0])
 

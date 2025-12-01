@@ -10,7 +10,7 @@
 # Run with:
 #   python -m src.presentation_helper
 
-from src.dataset import load_data
+from src.fake_dataset import load_data
 from src.encrypt import make_context, encrypt_vec, decrypt_scalar, encrypted_linear_layer
 from src.model import SimpleEncryptedLogReg
 import numpy as np
